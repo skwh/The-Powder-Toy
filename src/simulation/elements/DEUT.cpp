@@ -6,7 +6,7 @@ Element_DEUT::Element_DEUT()
     Name = "DEUT";
     Colour = PIXPACK(0x00153F);
     MenuVisible = 1;
-    MenuSection = SC_NUCLEAR;
+    MenuSection = SC_LIQUID;
     Enabled = 1;
     
     Advection = 0.6f;
@@ -28,7 +28,7 @@ Element_DEUT::Element_DEUT()
     
     Temperature = R_TEMP-2.0f	+273.15f;
     HeatConduct = 251;
-    Description = "Deuterium oxide. Volume changes with temp, radioactive with neutrons.";
+    Description = "Heavy Water, or deuterium oxide. Volume changes with temp, radioactive with neutrons.";
     
     State = ST_LIQUID;
     Properties = TYPE_LIQUID|PROP_NEUTPENETRATE;

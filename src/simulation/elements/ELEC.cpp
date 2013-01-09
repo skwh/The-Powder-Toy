@@ -4,7 +4,7 @@ Element_ELEC::Element_ELEC()
 {
     Identifier = "DEFAULT_PT_ELEC";
     Name = "ELEC";
-    Colour = PIXPACK(0xDFEFFF);
+    Colour = PIXPACK(0xBFDFFF);
     MenuVisible = 1;
     MenuSection = SC_NUCLEAR;
     Enabled = 1;
@@ -112,7 +112,7 @@ int Element_ELEC::update(UPDATE_FUNC_ARGS)
 						return 1;
 					}
 				}
-				if ((r&0xFF)==PT_NEUT && !pmap[y+ry][x+rx])
+				if ((r&0xFF)==PT_PROT && !pmap[y+ry][x+rx])
 				{
 					sim->part_change_type(r>>8, x+rx, y+ry, PT_H2);
 					parts[r>>8].life = 0;
