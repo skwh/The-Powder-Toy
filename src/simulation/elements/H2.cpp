@@ -5,6 +5,7 @@ Element_H2::Element_H2()
     Identifier = "DEFAULT_PT_H2";
     Name = "HYGN";
     Colour = PIXPACK(0x5070FF);
+	ATMnumber = 1;
     MenuVisible = 1;
     MenuSection = SC_GAS;
     Enabled = 1;
@@ -80,6 +81,10 @@ int Element_H2::update(UPDATE_FUNC_ARGS)
 						parts[i].temp+=(rand()/(RAND_MAX/100));
 						parts[i].tmp |= 1;
 					}
+				}
+				if (rt==PT_PROT)
+				{
+					sim->part_change_type(i,x,y,PT_HE);
 				}
 			}
 	if (parts[i].temp > 2273.15 && sim->pv[y/CELL][x/CELL] > 50.0f)
