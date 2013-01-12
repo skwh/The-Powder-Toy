@@ -15,6 +15,7 @@ public:
 	char *Identifier;
 	char *Name;
 	pixel Colour;
+	int ATMnumber;
 	float Advection;
 	float AirDrag;
 	float AirLoss;
