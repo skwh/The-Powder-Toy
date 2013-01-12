@@ -91,7 +91,7 @@
 #define OLD_PT_WIND 147
 
 //#define PT_NUM  161
-#define PT_NUM	256
+#define PT_NUM	258
 
 struct playerst;
 
