@@ -194,6 +194,8 @@ public:
 
 	int GetParticleType(std::string type);
 
+	Element getPeriodicElement(int atmnumber);
+
 	void *transform_save(void *odata, int *size, matrix2d transform, vector2d translate);
 	TPT_NO_INLINE void orbitalparts_get(int block1, int block2, int resblock1[], int resblock2[]);
 	TPT_NO_INLINE void orbitalparts_set(int *block1, int *block2, int resblock1[], int resblock2[]);
