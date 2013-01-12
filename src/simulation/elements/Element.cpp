@@ -5,6 +5,7 @@ Element::Element():
 	Identifier("DEFAULT_INVALID"),
 	Name(""),
 	Colour(PIXPACK(0xFF00FF)),
+	ATMnumber(0),
 	MenuVisible(0),
 	MenuSection(0),
 	Enabled(0),
@@ -53,6 +54,7 @@ std::vector<StructProperty> Element::GetProperties()
 	std::vector<StructProperty> properties;
 	properties.push_back(StructProperty("Name",							StructProperty::String,		offsetof(Element, Name)));
 	properties.push_back(StructProperty("Colour",						StructProperty::Colour,		offsetof(Element, Colour)));
+	properties.push_back(StructProperty("Atomic Number",				StructProperty::Integer,    offsetof(Element, ATMnumber)));
 	properties.push_back(StructProperty("MenuVisible",					StructProperty::Integer,	offsetof(Element, MenuVisible)));
 	properties.push_back(StructProperty("MenuSection",					StructProperty::Integer,	offsetof(Element, MenuSection)));
 	properties.push_back(StructProperty("Advection",					StructProperty::Float,		offsetof(Element, Advection)));
