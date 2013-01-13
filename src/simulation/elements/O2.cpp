@@ -6,7 +6,7 @@ Element_O2::Element_O2()
     Name = "OXYG";
     Colour = PIXPACK(0x80A0FF);
     MenuVisible = 1;
-    MenuSection = SC_GAS;
+    MenuSection = SC_ELEMENTS;
     Enabled = 1;
     
     Advection = 2.0f;

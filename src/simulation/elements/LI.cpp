@@ -2,11 +2,11 @@
 //#TPT-Directive ElementClass Element_LI PT_LI 171
 Element_LI::Element_LI() {
 	Identifier = "DEFAULT_PT_LI";
-	Name = "LI";
+	Name = "Li";
 	Colour = PIXPACK(0x949B94);
 	ATMnumber = 3;
 	MenuVisible = 1;
-	MenuSection = SC_SOLIDS;
+	MenuSection = SC_ELEMENTS;
 	Enabled = 1;
 
 	Advection = 0.0f;

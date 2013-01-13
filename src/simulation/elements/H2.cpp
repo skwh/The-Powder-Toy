@@ -7,7 +7,7 @@ Element_H2::Element_H2()
     Colour = PIXPACK(0x5070FF);
 	ATMnumber = 1;
     MenuVisible = 1;
-    MenuSection = SC_GAS;
+    MenuSection = SC_ELEMENTS;
     Enabled = 1;
     
     Advection = 2.0f;

@@ -6,7 +6,7 @@ Element_IRON::Element_IRON()
     Name = "IRON";
     Colour = PIXPACK(0x707070);
     MenuVisible = 1;
-    MenuSection = SC_SOLIDS;
+    MenuSection = SC_ELEMENTS;
     Enabled = 1;
     
     Advection = 0.0f;

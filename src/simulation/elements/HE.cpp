@@ -3,10 +3,10 @@
 Element_HE::Element_HE() 
 {
 	Identifier = "DEFAULT_PT_HE";
-	Name = "HE";
+	Name = "He";
 	Colour = PIXPACK(0xA9F5DC);
 	MenuVisible = 1;
-	MenuSection = SC_GAS;
+	MenuSection = SC_ELEMENTS;
 	Enabled = 1;
 
 	Advection = 2.0f;

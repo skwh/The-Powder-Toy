@@ -2,7 +2,7 @@
 //#TPT-Directive ElementClass Element_HES PT_HES 169
 Element_HES::Element_HES() {
 	Identifier = "DEFAULT_PT_HES";
-	Name = "HES";
+	Name = "HeS";
 	Colour = PIXPACK(0xA9F5DC);
 	MenuVisible = 1;
 	MenuSection = SC_CRACKER2;

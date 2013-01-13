@@ -2,11 +2,11 @@
 //#TPT-Directive ElementClass Element_PB PT_PB 170
 Element_PB::Element_PB() {
 	Identifier = "DEFAULT_PT_PB";
-	Name = "PB";
+	Name = "Pb";
 	Colour = PIXPACK(0x72C1DB);
 	ATMnumber = 82;
 	MenuVisible = 1;
-	MenuSection = SC_SOLIDS;
+	MenuSection = SC_ELEMENTS;
 	Enabled = 1;
 
 	Advection = 0.0f;
@@ -28,10 +28,10 @@ Element_PB::Element_PB() {
 
 	Temperature = R_TEMP+273.15f;
 	HeatConduct = 754;
-	Description = "Lead (Pb, Plumbum). Blocks Neutrons without destroying them.";
+	Description = "Lead (Pb, Plumbum). Blocks Neutrons.";
 
 	State = ST_SOLID;
-	Properties = TYPE_SOLID|PROP_DEADLY;
+	Properties = TYPE_SOLID|PROP_DEADLY|PROP_NEUTABSORB;
 
 	LowPressure = IPL;
 	LowPressureTransition = NT;
@@ -52,13 +52,10 @@ int Element_PB::update(UPDATE_FUNC_ARGS) {
 	for (rx=-2;rx<3;rx++) {
 		for (ry=-2;ry<3;ry++) {
 			if (x+rx>=0 && y+ry>=0 && x+rx>=XRES && y+ry>=YRES && (rx||ry)) {
-				r = pmap[y+ry][x+rx];
+				r = sim->photons[y+ry][x+rx];
 				rt = (r&0xFF);
 				if (!r)
 					continue;
-				if (rt == PT_NEUT) {
-					parts[i].life = 1000;
-				}
 			}
 		}
 	}

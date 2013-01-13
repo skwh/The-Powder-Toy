@@ -6,7 +6,7 @@ Element_RBDM::Element_RBDM()
     Name = "RBDM";
     Colour = PIXPACK(0xCCCCCC);
     MenuVisible = 1;
-    MenuSection = SC_EXPLOSIVE;
+    MenuSection = SC_ELEMENTS;
     Enabled = 1;
     
     Advection = 0.0f;

@@ -6,7 +6,7 @@ Element_LRBD::Element_LRBD()
     Name = "LRBD";
     Colour = PIXPACK(0xAAAAAA);
     MenuVisible = 1;
-    MenuSection = SC_EXPLOSIVE;
+    MenuSection = SC_CRACKER2;
     Enabled = 1;
     
     Advection = 0.3f;

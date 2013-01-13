@@ -6,7 +6,7 @@ Element_URAN::Element_URAN()
     Name = "URAN";
     Colour = PIXPACK(0x707020);
     MenuVisible = 1;
-    MenuSection = SC_NUCLEAR;
+    MenuSection = SC_ELEMENTS;
     Enabled = 1;
     
     Advection = 0.4f;
