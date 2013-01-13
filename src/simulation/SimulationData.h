@@ -18,13 +18,14 @@
 #define SC_POWDERS 8
 #define SC_SOLIDS 9
 #define SC_NUCLEAR 10
-#define SC_SPECIAL 11
-#define SC_LIFE 12
-#define SC_TOOL 13
-#define SC_DECO 14
-#define SC_CRACKER 15
-#define SC_CRACKER2 16
-#define SC_TOTAL 15
+#define SC_ELEMENTS 11
+#define SC_SPECIAL 12
+#define SC_LIFE 13
+#define SC_TOOL 14
+#define SC_DECO 15
+#define SC_CRACKER 16
+#define SC_CRACKER2 17
+#define SC_TOTAL 16
 
 #define UI_WALLSTART 222
 #define UI_ACTUALSTART 122

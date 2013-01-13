@@ -158,6 +158,7 @@ menu_section * LoadMenus(int & menuCount)
 		{"\xD0", "Powders", 0, 1},
 		{"\xD1", "Solids", 0, 1},
 		{"\xC6", "Radioactive", 0, 1},
+		{"\xC8", "Periodic Table", 0, 1},
 		{"\xCC", "Special", 0, 1},
 		{"\xD2", "Game Of Life", 0, 1},
 		{"\xD7", "Tools", 0, 1},
