@@ -4,6 +4,7 @@ Element_URAN::Element_URAN()
 {
     Identifier = "DEFAULT_PT_URAN";
     Name = "URAN";
+	ATMnumber = 92;
     Colour = PIXPACK(0x707020);
     MenuVisible = 1;
     MenuSection = SC_ELEMENTS;
