@@ -117,6 +117,7 @@ int Element_ELEC::update(UPDATE_FUNC_ARGS)
 					sim->part_change_type(r>>8, x+rx, y+ry, PT_H2);
 					parts[r>>8].life = 0;
 					parts[r>>8].ctype = 0;
+					sim->kill_part(i);
 				}
 				if ((r&0xFF)==PT_DEUT)
 				{
