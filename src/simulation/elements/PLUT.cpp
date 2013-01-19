@@ -4,6 +4,7 @@ Element_PLUT::Element_PLUT()
 {
     Identifier = "DEFAULT_PT_PLUT";
     Name = "PLUT";
+	ATMnumber = 94;
     Colour = PIXPACK(0x407020);
     MenuVisible = 1;
     MenuSection = SC_ELEMENTS;
