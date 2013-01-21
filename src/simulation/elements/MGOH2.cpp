@@ -4,7 +4,7 @@ Element_MGOH2::Element_MGOH2() {
 	Identifier = "DEFAULT_PT_MGOH2";
 	Name = "MgOH2";
 	ATMnumber = 0;
-	Colour = PIXPACK(0xFFFCF5);
+	Colour = PIXPACK(0xBFC0B8);
 	MenuVisible = 1;
 	MenuSection = SC_CRACKER2;
 	Enabled = 1;
