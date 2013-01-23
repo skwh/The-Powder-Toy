@@ -27,7 +27,7 @@ Element_PROT::Element_PROT()
     Weight = -1;
     
     Temperature = R_TEMP+900.0f+273.15f;
-    HeatConduct = 251;
+    HeatConduct = 0;
     Description = "Protons";
     
     State = ST_GAS;
@@ -53,10 +53,6 @@ int Element_PROT::update(UPDATE_FUNC_ARGS)
 	float rr, rrr;
 	parts[i].pavg[0] = x;
 	parts[i].pavg[1] = y;
-	if(pmap[y][x]==PT_GLOW)
-	{
-		sim->part_change_type(i, x, y, PT_PHOT);
-	}
 	for (rx=-2; rx<=2; rx++)
 		for (ry=-2; ry<=2; ry++)
 			if (x+rx>=0 && y+ry>=0 && x+rx<XRES && y+ry<YRES) {
