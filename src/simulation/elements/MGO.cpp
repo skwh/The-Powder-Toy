@@ -57,10 +57,7 @@ int Element_MGO::update(UPDATE_FUNC_ARGS) {
                 (pmap[y+ry][x+rx]&0xFF)!=0xFF) {
 				r = sim->pmap[y+ry][x+rx];
 				rt = (r&0xFF);
-				if (rt == PT_WATR) {
-					sim->part_change_type(i,x,y,PT_MGOH2);
-					sim->kill_part(r>>8);
-				}
+				
 			}
 		}
 	}
