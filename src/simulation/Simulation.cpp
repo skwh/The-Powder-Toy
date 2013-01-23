@@ -3105,6 +3105,12 @@ int Simulation::create_part(int p, int x, int y, int tv)
 					parts[i].vx = 2.0f*cosf(a);
 					parts[i].vy = 2.0f*sinf(a);
 				}
+				if (t==PT_ALPA) {
+					float a = (rand()%360)*3.14159f/180.0f;
+					parts[i].life = 680;
+					parts[i].vx = 2.0f*cosf(a);
+					parts[i].vy = 2.0f*sinf(a);
+				}
 				if (t==PT_NEUT)
 				{
 					float r = (rand()%128+128)/127.0f;
