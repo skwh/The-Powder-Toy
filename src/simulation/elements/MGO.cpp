@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_MGO PT_MGO 173
+//#TPT-Directive ElementClass Element_MGO PT_MGO 169
 Element_MGO::Element_MGO() {
 	Identifier = "DEFAULT_PT_MGO";
 	Name = "MgO";

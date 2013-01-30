@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_MGOH2 PT_MGOH2 174
+//#TPT-Directive ElementClass Element_MGOH2 PT_MGOH2 170
 Element_MGOH2::Element_MGOH2() {
 	Identifier = "DEFAULT_PT_MGOH2";
 	Name = "MgOH2";

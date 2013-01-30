@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_ALPA PT_ALPA 176
+//#TPT-Directive ElementClass Element_ALPA PT_ALPA 171
 Element_ALPA::Element_ALPA() {
 	Identifier = "DEFAULT_PT_ALPA";
 	Name = "ALPA";
@@ -29,7 +29,7 @@ Element_ALPA::Element_ALPA() {
 	Description = "Alpha Particles. Creates He when combined with ELEC.";
 
 	State = ST_GAS;
-	Properties = TYPE_ENERGY|PROP_LIFE_DEC|PROP_LIFE_KILL_DEC|PROP_DEADLY;
+	Properties = TYPE_ENERGY|PROP_DEADLY;
 
 	LowPressure = IPL;
     LowPressureTransition = NT;
