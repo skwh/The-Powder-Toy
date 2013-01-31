@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_MG PT_MG 172
+//#TPT-Directive ElementClass Element_MG PT_MG 183
 Element_MG::Element_MG() {
 	Identifier = "DEFAULT_PT_MG";
 	Name = "Mg";

@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_PB PT_PB 170
+//#TPT-Directive ElementClass Element_PB PT_PB 239
 Element_PB::Element_PB() {
 	Identifier = "DEFAULT_PT_PB";
 	Name = "Pb";
@@ -28,7 +28,7 @@ Element_PB::Element_PB() {
 
 	Temperature = R_TEMP+273.15f;
 	HeatConduct = 754;
-	Description = "Lead (Pb, Plumbum). Blocks Neutrons.";
+	Description = "Lead (Plumbum). Blocks Neutrons and Alpha particles.";
 
 	State = ST_SOLID;
 	Properties = TYPE_SOLID|PROP_DEADLY|PROP_NEUTABSORB;
