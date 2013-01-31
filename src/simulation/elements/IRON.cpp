@@ -4,6 +4,7 @@ Element_IRON::Element_IRON()
 {
     Identifier = "DEFAULT_PT_IRON";
     Name = "IRON";
+	ATMnumber = 26;
     Colour = PIXPACK(0x707070);
     MenuVisible = 1;
     MenuSection = SC_ELEMENTS;
