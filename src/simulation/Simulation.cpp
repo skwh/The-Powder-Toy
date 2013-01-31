@@ -2016,7 +2016,7 @@ void Simulation::init_can_move()
 			if (elements[t].Weight <= elements[rt].Weight || rt==PT_GEL) can_move[t][rt] = 0;
 			if (t==PT_NEUT && (elements[rt].Properties&PROP_NEUTPASS))
 				can_move[t][rt] = 2;
-			if (t==PT_NEUT && (elements[rt].Properties&PROP_NEUTABSORB))
+			if ((t==PT_NEUT||t==PT_ALPA) && (elements[rt].Properties&PROP_NEUTABSORB))
 				can_move[t][rt] = 1;
 			if (t==PT_NEUT && (elements[rt].Properties&PROP_NEUTPENETRATE))
 				can_move[t][rt] = 1;
@@ -2279,7 +2279,7 @@ int Simulation::try_move(int i, int x, int y, int nx, int ny)
 	}
 	//else e=1 , we are trying to swap the particles, return 0 no swap/move, 1 is still overlap/move, because the swap takes place later
 
-	if (parts[i].type == PT_NEUT && (elements[r & 0xFF].Properties & PROP_NEUTABSORB))
+	if ((parts[i].type == PT_NEUT || parts[i].type == PT_ALPA) && (elements[r & 0xFF].Properties & PROP_NEUTABSORB))
 	{
 		kill_part(i);
 		return 0;
