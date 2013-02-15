@@ -84,6 +84,18 @@ int Element_DSTW::update(UPDATE_FUNC_ARGS)
 							return 1;
 						}
 				}
+				if ((r&0xFF)==PT_MG && 1>(rand()%250))
+				{
+					sim->part_change_type(i,x,y,PT_H2);
+					if (rand()%3==0)
+						sim->part_change_type(r>>8,x+rx,y+ry,PT_MGOH2);
+				}
+				if ((r&0xFF)==PT_MGO && 1>(rand()%250)) {
+					sim->part_change_type(i,x,y,PT_MGOH2);
+					if (rand()%3==0) {
+						sim->kill_part(r>>8);
+					}
+				}
 			}
 	return 0;
 }
