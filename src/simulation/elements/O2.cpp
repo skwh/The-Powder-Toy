@@ -71,6 +71,11 @@ int Element_O2::update(UPDATE_FUNC_ARGS)
 						parts[i].temp+=(rand()/(RAND_MAX/100));
 						parts[i].tmp |= 2;
 					}
+					if ((r&0xFF)==PT_AL) 
+					{
+						sim->part_change_type(r>>8,x+rx,y+ry,PT_Al2O3);
+						sim->kill_part(i);
+					}
 
 				}
 	if (parts[i].temp > 9973.15 && sim->pv[y/CELL][x/CELL] > 250.0f && abs(sim->gravx[((y/CELL)*(XRES/CELL))+(x/CELL)]) + abs(sim->gravy[((y/CELL)*(XRES/CELL))+(x/CELL)]) > 20)
